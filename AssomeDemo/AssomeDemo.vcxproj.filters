@@ -18,13 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Exercise1.cpp">
+    <ClCompile Include="LessonTriangle_Exercise1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Exercise2.cpp">
+    <ClCompile Include="LessonTriangle_Exercise2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Exercise3.cpp">
+    <ClCompile Include="LessonTriangle_Exercise3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LessonShaders.cpp">
@@ -38,16 +38,16 @@
     <ClInclude Include="Renderer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Exercise1.h">
+    <ClInclude Include="LessonTriangle_Exercise1.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="RendererExercise.h">
+    <ClInclude Include="LessonTriangle.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Exercise2.h">
+    <ClInclude Include="LessonTriangle_Exercise2.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Exercise3.h">
+    <ClInclude Include="LessonTriangle_Exercise3.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="LessonShaders.h">

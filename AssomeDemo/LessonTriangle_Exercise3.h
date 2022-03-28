@@ -1,7 +1,7 @@
 #pragma once
-#include "RendererExercise.h"
+#include "LessonTriangle.h"
 
-class Exercise3 : public RendererExercise
+class LessonTriangle_Exercise3 : public LessonTriangle
 {
 public:
     const char* fragmentShaderSourceYellow = "#version 330 core\n"

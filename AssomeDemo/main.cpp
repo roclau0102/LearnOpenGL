@@ -3,9 +3,9 @@
 #include <iostream>
 
 #include "Renderer.h"
-#include "Exercise1.h"
-#include "Exercise2.h"
-#include "Exercise3.h"
+#include "LessonTriangle_Exercise1.h"
+#include "LessonTriangle_Exercise2.h"
+#include "LessonTriangle_Exercise3.h"
 #include "LessonShaders.h"
 
 const int HEIGHT = 800;
@@ -38,6 +38,9 @@ int main()
 
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
+    //Renderer* renderer = new LessonTriangle_Exercise1();
+    //Renderer* renderer = new LessonTriangle_Exercise2();
+    //Renderer* renderer = new LessonTriangle_Exercise3();
     Renderer* renderer = new LessonShaders();
     renderer->OnStart();
 

@@ -1,9 +1,14 @@
 #pragma once
 #include "Renderer.h"
 
-class RendererExercise : public Renderer
+class LessonTriangle : public Renderer
 {
 public:
+    virtual void OnStart() = 0;
+    virtual void OnRender() = 0;
+    virtual void OnEnd() = 0;
+
+protected:
     const char* vertexShaderSource = "#version 330 core\n"
         "layout (location = 0) in vec3 aPos;\n"
         "void main()\n"
@@ -17,8 +22,4 @@ public:
         "{\n"
         "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
         "}\0";
-
-    virtual void OnStart() = 0;
-    virtual void OnRender() = 0;
-    virtual void OnEnd() = 0;
 };

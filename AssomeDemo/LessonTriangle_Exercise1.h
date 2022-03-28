@@ -1,7 +1,7 @@
 #pragma once
-#include "RendererExercise.h"
+#include "LessonTriangle.h"
 
-class Exercise1 : public RendererExercise
+class LessonTriangle_Exercise1 : public LessonTriangle
 {
 public:
     void OnStart() override;

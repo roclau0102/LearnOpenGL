@@ -1,6 +1,6 @@
-#include "Exercise1.h"
+#include "LessonTriangle_Exercise1.h"
 
-void Exercise1::OnStart()
+void LessonTriangle_Exercise1::OnStart()
 {
     unsigned int vertexShader;
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -52,7 +52,7 @@ void Exercise1::OnStart()
     glBindVertexArray(0);
 }
 
-void Exercise1::OnRender()
+void LessonTriangle_Exercise1::OnRender()
 {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
@@ -62,7 +62,7 @@ void Exercise1::OnRender()
     glDrawArrays(GL_TRIANGLES, 0, 6);
 }
 
-void Exercise1::OnEnd()
+void LessonTriangle_Exercise1::OnEnd()
 {
     glDeleteProgram(shaderProgram);
 }
