@@ -7,6 +7,10 @@
 #include "LessonTriangle_Exercise2.h"
 #include "LessonTriangle_Exercise3.h"
 #include "LessonShaders.h"
+#include "LessonShader2.h"
+#include "LessonShader_Exercise1.h"
+#include "LessonShader_Exercise2.h"
+#include "LessonShader_Exercise3.h"
 
 const int HEIGHT = 800;
 const int WIDTH = 600;
@@ -41,7 +45,11 @@ int main()
     //Renderer* renderer = new LessonTriangle_Exercise1();
     //Renderer* renderer = new LessonTriangle_Exercise2();
     //Renderer* renderer = new LessonTriangle_Exercise3();
-    Renderer* renderer = new LessonShaders();
+    //Renderer* renderer = new LessonShaders();
+    //Renderer* renderer = new LessonShader2();
+    //Renderer* renderer = new LessonShader_Exercise1();
+    //Renderer* renderer = new LessonShader_Exercise2();
+    Renderer* renderer = new LessonShader_Exercise3();
     renderer->OnStart();
 
     while (!glfwWindowShouldClose(window))

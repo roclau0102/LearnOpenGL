@@ -1,14 +1,23 @@
 #pragma once
-#include "Renderer.h"
-#include "Shader.h"
+#include "LessonShaders.h"
 
-class LessonShaders : public Renderer
+class LessonShader_Exercise1 : public LessonShaders
 {
 public:
-    // Inherited via Renderer
-    virtual void OnStart() override;
-    virtual void OnRender() override;
-    virtual void OnEnd() override;
+    virtual void OnStart() override
+    {
+        LessonShaders::OnStart();
+    }
+
+    virtual void OnRender() override
+    {
+        LessonShaders::OnRender();
+    }
+
+    virtual void OnEnd() override
+    {
+        LessonShaders::OnEnd();
+    }
 
 protected:
     virtual const char* GetVertexShaderSource()
@@ -20,14 +29,16 @@ protected:
             "out vec3 ourColor;\n"
             "void main()\n"
             "{\n"
-            "   gl_Position = vec4(aPos, 1.0);\n"
+            "   vec3 p = aPos;\n"
+            "   p.y = -1.0 * p.y;\n"
+            "   gl_Position = vec4(p, 1.0);\n"
             "   ourColor = aColor;\n"
             "}\0";
     }
 
     virtual const char* GetFragmentShaderSource()
     {
-        return 
+        return
             "#version 330 core\n"
             "out vec4 FragColor;\n"
             "// uniform vec4 ourColor; // we set this variable in the OpenGL code.\n"
@@ -37,9 +48,5 @@ protected:
             "    FragColor = vec4(ourColor, 1.0f);\n"
             "}\0";
     }
-
-protected:
-    GLuint m_VAO;
-    GLuint m_shaderProgram;
 };
 

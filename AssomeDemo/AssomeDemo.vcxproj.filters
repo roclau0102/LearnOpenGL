@@ -33,6 +33,9 @@
     <ClCompile Include="..\External\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LessonShader2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderer.h">
@@ -51,6 +54,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="LessonShaders.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LessonShader2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LessonShader_Exercise1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LessonShader_Exercise2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LessonShader_Exercise3.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
